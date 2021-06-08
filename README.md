@@ -1,0 +1,1 @@
+# Chat-Quick-Responses-ChromeExtension
