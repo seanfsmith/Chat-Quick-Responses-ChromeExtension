@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html style=''>
+<div>
+	<h2 id="icon">Quick Chat Responses</h2>
+</div>
+<link rel="stylesheet" href="style.css">
+<body style="width:450px;">
+<div>
+	<hr>
+	<!-- Intro field responses in popup.js -->
+
+		<label for="intros"><strong>Intro:</strong></label>
+		<select name="intros" id="intros" style="position: absolute;text-align:center;right: 40%;">
+			<option value="1" title="Hello, thank you for contacting the Maryland Division of Unemployment Insurance, how may I assist you today?">Claimant Info Provided</option>
+			<option value="2" title="Hello, thank you for contacting the Maryland Division of Unemployment Insurance, would you please provide your full name, claimant id, date of birth, and last 4 SSN?">Claimant Info Not Provided</option>
+		</select>
+		<button id="introButton">Copy to clipboard</button>
+
+	<hr>
+	<!-- Farewell field responses in popup.js -->
+	<label for="farewells"><strong>Outro:</strong></label>
+	<select name="farewells" id="farewells" style="position: absolute;text-align:center;right: 40%;">
+		<option value="1" title="Is there anything additional that I can assist you with today?">Additional Questions?</option>
+		<option value="2" title="Please Call 1-667-207-6520 to speak with a live agent. Live agents are available from 7:00 a.m. to 6:00 p.m., Monday through Friday; from 8:00 a.m. to 12:00 p.m. on Saturday; and from 12:00 p.m. to 4:00 p.m. Sunday.">Phone Agent Info</option>
+		<option value="3" title="Thank you for using the virtual chat feature. Enjoy the rest of your day! I will now close our chat.">Final chat message</option>
+	</select>
+	<button id="outroButton">Copy to clipboard</button>
+	<hr>
+	<!-- Unable to resolve issue on chat -->
+	<label for="outofscope"><strong>Out of Chat Scope:</strong></label>
+	<select name="outofscope" id="outofscope" style="position: absolute;text-align:center;right: 40%;">
+		<option value="1" title="Unfortunately, the issue on your account cannot be solved via Chat. Please continue to check your Beacon account and wait for further communication from the state. If you do not have any other questions, I will now close our chat.">Out of chat scope</option>
+	</select>
+	<button id="outofscopeButton">Copy to clipboard</button>
+
+	<hr>
+	<!-- Phone Agent Info -->
+	<!-- Timeframe -->
+	<label for="timeframe"><strong>Timeframes:</strong></label>
+	<select name="timeframe" id="timeframe" style="position: absolute;text-align:center;right: 40%;">
+		<option value="1" title="Unfortunately, I do not have a timeline for you on this. Please continue to check your Beacon for any updates to your account.">No Timeframe to give</option>
+	</select>
+	<button id="timeframeButton">Copy to clipboard</button>
+
+	<hr>
+	<!-- No Response -->
+	<label for="noresponse"><strong>No Response:</strong></label>
+	<select name="noresponse" id="noresponse" style="position: absolute;text-align:center;right: 40%;">
+		<option value="1" title="Hello, are you still there?">Are you still there?</option>
+		<option value="2" title="Hello, since I have not heard a response from you in over 5 minutes. I will now end our chat. Thank you!">Close Chat</option>
+	</select>
+	<button id="noresponseButton">Copy to clipboard</button>
+	<hr>
+
+</div>
+<script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>

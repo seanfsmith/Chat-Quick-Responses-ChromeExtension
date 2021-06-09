@@ -1,0 +1,14 @@
+{
+    "name": "Quick Chat Responses",
+    "description": "This extension aids in the speed of chat responses",
+    "version": "1.0",
+    "browser_action": {
+      "default_popup": "popup.html"
+  },
+    "permissions": [
+      "storage","clipboardWrite","clipboardRead"
+    ],
+    "manifest_version": 2,
+    "commands": {
+  }
+}
