@@ -1,0 +1,15 @@
+labels:
+
+intros
+farewells
+outofscope
+timeframe
+noresponse
+
+buttons:
+
+introButton
+outroButton
+outofscopeButton
+timeframeButton
+noresponseButton
